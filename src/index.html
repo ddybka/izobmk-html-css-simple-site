@@ -1,185 +1,259 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Наш первый прекрасный сайт</title>
 
-        <link href="cdn/bootstrap.min.css" rel="stylesheet">
-    </head>
-    <body>
-        <!-- Header -->
-        <div class="container">
-            <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-                <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-                    <span class="fs-4">Мой крутой бизнес</span>
-                </a>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наш первый прекрасный сайт</title>
 
-                <ul class="nav nav-pills">
-                    <li class="nav-item"><a href="#block1" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="#block2" class="nav-link">Features</a></li>
-                    <li class="nav-item"><a href="#block3" class="nav-link">Pricing</a></li>
-                    <li class="nav-item"><a href="#block4" class="nav-link">FAQs</a></li>
-                    <li class="nav-item"><a href="#block5" class="nav-link">About</a></li>
-                </ul>
-            </header>
+    <link href="cdn/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .feature-icon {
+            width: 4rem;
+            height: 4rem;
+            border-radius: .75rem;
+        }
+
+        .icon-square {
+            width: 3rem;
+            height: 3rem;
+            border-radius: .75rem;
+        }
+
+        .text-shadow-1 {
+            text-shadow: 0 .125rem .25rem rgba(0, 0, 0, .25);
+        }
+
+        .text-shadow-2 {
+            text-shadow: 0 .25rem .5rem rgba(0, 0, 0, .25);
+        }
+
+        .text-shadow-3 {
+            text-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .25);
+        }
+
+        .card-cover {
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .feature-icon-small {
+            width: 3rem;
+            height: 3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <span class="fs-4">Мой крутой бизнес</span>
+            </a>
+
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="#block1" class="nav-link">Прекрасный сайт</a></li>
+                <li class="nav-item"><a href="#block2" class="nav-link">Форма</a></li>
+                <li class="nav-item"><a href="#block3" class="nav-link">На всю ширину</a></li>
+                <li class="nav-item"><a href="#block4" class="nav-link">Иконки</a></li>
+                <li class="nav-item"><a href="#block5" class="nav-link">Анекдоты!</a></li>
+            </ul>
+        </header>
+    </div>
+    <!-- /Header -->
+
+    <!-- Main -->
+    <main>
+
+        <!-- Main > Block 1 -->
+        <div class="px-4 pt-5 my-5 text-center border-bottom" id="block1">
+            <h1 class="display-4 fw-bold text-body-emphasis">Делаем прекрасный сайт</h1>
+            <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4">
+                    На этом мастер-классе мы сделаем наш первый прекрасный сайт с применением HTML, CSS и фреймворка Bootstrap для того, чтобы наш сайт получился самым красивым!
+                </p>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+                    <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Кнопка 1</button>
+                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Кнопка 2</button>
+                </div>
+            </div>
+            <div class="overflow-hidden" style="max-height: 30vh;">
+                <div class="container px-5">
+                    <img src="img/bootstrap-docs.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+                </div>
+            </div>
         </div>
-        <!-- /Header -->
+        <!-- Main > /Block 1 -->
 
-        <!-- Main -->
-        <main>
-
-            <!-- Main > Block 1 -->
-            <div class="px-4 pt-5 my-5 text-center border-bottom">
-                <h1 class="display-4 fw-bold text-body-emphasis">Centered screenshot</h1>
-                <div class="col-lg-6 mx-auto">
-                    <p class="lead mb-4">
-                        Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.
+        <!-- Main > Block 2 -->
+        <div class="container col-xl-10 col-xxl-8 px-4 py-5" id="block2">
+            <div class="row align-items-center g-lg-5 py-5">
+                <div class="col-lg-7 text-center text-lg-start">
+                    <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">Пример формы на сайте</h1>
+                    <p class="col-lg-10 fs-4">
+                        Здесь представлен пример использования формы на сайте для того, чтобы получить сведения от пользователя и сохранить их на сайте.
                     </p>
-                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-                        <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Primary button</button>
-                        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
-                    </div>
                 </div>
-                <div class="overflow-hidden" style="max-height: 30vh;">
-                    <div class="container px-5">
-                        <img src="img/bootstrap-docs.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
-                    </div>
+                <div class="col-md-10 mx-auto col-lg-5">
+                    <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Почта</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">Пароль</label>
+                        </div>
+                        <div class="checkbox mb-3">
+                            <label>
+                                <input type="checkbox" value="remember-me"> Сохранить вход
+                            </label>
+                        </div>
+                        <button class="w-100 btn btn-lg btn-primary" type="submit">Авторизация</button>
+                        <hr class="my-4">
+                        <small class="text-body-secondary">Подтверждаете согласие с Политикой Конфиденциальности.</small>
+                    </form>
                 </div>
             </div>
-            <!-- Main > /Block 1 -->
-
-            <!-- Main > Block 2 -->
-            <div class="container col-xl-10 col-xxl-8 px-4 py-5">
-                <div class="row align-items-center g-lg-5 py-5">
-                    <div class="col-lg-7 text-center text-lg-start">
-                        <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">Vertically centered hero sign-up form</h1>
-                        <p class="col-lg-10 fs-4">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
-                    </div>
-                    <div class="col-md-10 mx-auto col-lg-5">
-                        <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
-                            <div class="form-floating mb-3">
-                                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                                <label for="floatingInput">Email address</label>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                                <label for="floatingPassword">Password</label>
-                            </div>
-                            <div class="checkbox mb-3">
-                                <label>
-                                    <input type="checkbox" value="remember-me"> Remember me
-                                </label>
-                            </div>
-                            <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
-                            <hr class="my-4">
-                            <small class="text-body-secondary">By clicking Sign up, you agree to the terms of use.</small>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <!-- Main > /Block 2 -->
-
-            <div class="my-5">
-                <div class="p-5 text-center bg-body-tertiary">
-                    <div class="container py-5">
-                        <h1 class="text-body-emphasis">Full-width jumbotron</h1>
-                        <p class="col-lg-8 mx-auto lead">
-                            This takes the basic jumbotron above and makes its background edge-to-edge with a <code>.container</code> inside to align content. Similar to above, it's been recreated with built-in grid and utility classes.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container px-4 py-5" id="featured-3">
-                <h2 class="pb-2 border-bottom">Columns with icons</h2>
-                <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-                    <div class="feature col">
-                        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-                            <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"></use></svg>
-                        </div>
-                        <h3 class="fs-2 text-body-emphasis">Featured title</h3>
-                        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-                        <a href="#" class="icon-link">
-                            Call to action
-                            <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
-                        </a>
-                    </div>
-                    <div class="feature col">
-                        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-                            <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"></use></svg>
-                        </div>
-                        <h3 class="fs-2 text-body-emphasis">Featured title</h3>
-                        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-                        <a href="#" class="icon-link">
-                            Call to action
-                            <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
-                        </a>
-                    </div>
-                    <div class="feature col">
-                        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-                            <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
-                        </div>
-                        <h3 class="fs-2 text-body-emphasis">Featured title</h3>
-                        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-                        <a href="#" class="icon-link">
-                            Call to action
-                            <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="p-5 mb-4 bg-body-tertiary rounded-3">
-                    <div class="container-fluid py-5">
-                        <h1 class="display-5 fw-bold">Custom jumbotron</h1>
-                        <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
-                        <button class="btn btn-primary btn-lg" type="button">Example button</button>
-                    </div>
-                </div>
-                <div class="row align-items-md-stretch">
-                    <div class="col-md-6">
-                        <div class="h-100 p-5 text-bg-dark rounded-3">
-                            <h2>Change the background</h2>
-                            <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
-                            <button class="btn btn-outline-light" type="button">Example button</button>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="h-100 p-5 bg-body-tertiary border rounded-3">
-                            <h2>Add borders</h2>
-                            <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.</p>
-                            <button class="btn btn-outline-secondary" type="button">Example button</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </main>
-        <!-- /Main -->
-
-        <!-- Footer -->
-        <div class="container">
-            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-                <p class="col-md-4 mb-0 text-body-secondary">© 2025 Даниил Дыбка</p>
-
-                <a href="#" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-                    <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-                </a>
-
-                <ul class="nav col-md-4 justify-content-end">
-                    <li class="nav-item"><a href="#block1" class="nav-link px-2 text-body-secondary">Home</a></li>
-                    <li class="nav-item"><a href="#block2" class="nav-link px-2 text-body-secondary">Features</a></li>
-                    <li class="nav-item"><a href="#block3" class="nav-link px-2 text-body-secondary">Pricing</a></li>
-                    <li class="nav-item"><a href="#block4" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-                    <li class="nav-item"><a href="#block5" class="nav-link px-2 text-body-secondary">About</a></li>
-                </ul>
-            </footer>
         </div>
-        <!-- /Footer -->
+        <!-- Main > /Block 2 -->
 
-        <script src="cdn/bootstrap.bundle.min.js"></script>
-    </body>
+        <!-- Main > Block 3 -->
+        <div class="my-5" id="block3">
+            <div class="p-5 text-center bg-body-tertiary">
+                <div class="container py-5">
+                    <h1 class="text-body-emphasis">Контент на всю ширину</h1>
+                    <p class="col-lg-8 mx-auto lead">
+                        Здесь представлена возможность растянуть фон на всю ширину области видимости, а внутри расположить то содержимое, которое Вы посчитаете нужным.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Main > /Block 3 -->
+
+        <!-- Main > Block 4 -->
+        <div class="container px-4 py-5" id="block4">
+            <h2 class="pb-2 border-bottom">Колонки с иконками</h2>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                <div class="feature col">
+                    <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-collection" viewBox="0 0 16 16">
+                            <path d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6zm1.5.5A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5z" />
+                        </svg>
+                    </div>
+                    <h3 class="fs-2 text-body-emphasis">Колонка 1</h3>
+                    <p>
+                        Текст колонки.
+                    </p>
+                    <a href="#" class="icon-link">
+                        Перейти
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="feature col">
+                    <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                        </svg>
+                    </div>
+                    <h3 class="fs-2 text-body-emphasis">Колонка 2</h3>
+                    <p>
+                        Текст колонки.
+                    </p>
+                    <a href="#" class="icon-link">
+                        Перейти
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="feature col">
+                    <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-toggles2" viewBox="0 0 16 16">
+                            <path d="M9.465 10H12a2 2 0 1 1 0 4H9.465c.34-.588.535-1.271.535-2s-.195-1.412-.535-2" />
+                            <path d="M6 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6m0 1a4 4 0 1 1 0-8 4 4 0 0 1 0 8m.535-10a4 4 0 0 1-.409-1H4a1 1 0 0 1 0-2h2.126q.138-.534.41-1H4a2 2 0 1 0 0 4z" />
+                            <path d="M14 4a4 4 0 1 1-8 0 4 4 0 0 1 8 0" />
+                        </svg>
+                    </div>
+                    <h3 class="fs-2 text-body-emphasis">Колонка 3</h3>
+                    <p>
+                        Текст колонки.
+                    </p>
+                    <a href="#" class="icon-link">
+                        Перейти
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Main > /Block 4 -->
+
+        <!-- Main > Block 5 -->
+        <div class="container" id="block5">
+            <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+                <div class="container-fluid py-5">
+                    <h1 class="display-5 fw-bold">Большое содержимое в конце</h1>
+                    <p class="col-md-8 fs-4">
+                        А здесь можно привести итоги текущей страницы, рассказать почему Ваша страница лучше, поделиться различной информацией о вас, либо же просто вставить анекдоты или мемы.
+                    </p>
+                    <button class="btn btn-primary btn-lg" type="button">Пук-пук</button>
+                </div>
+            </div>
+            <div class="row align-items-md-stretch">
+                <div class="col-md-6">
+                    <div class="h-100 p-5 text-bg-dark rounded-3">
+                        <h2>Анекдот 1</h2>
+                        <p>
+                            — По радио сообщили о переходе на зимнее время, сказав, что «этой ночью, ровно в 03:00 нужно перевести стрелку часов на один час назад, на 02:00».<br>
+                            — У всех программистов эта ночь зависла в бесконечном цикле.
+                        </p>
+                        <button class="btn btn-outline-light" type="button">Смешно!</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+                        <h2>Анекдот 2</h2>
+                        <p>
+                            К бухгалтерам пришёл программист чего то исправлять в программе. Спрашивает:<br>
+                            — У вас моносеть? — нормальный вопрос системщика.<br>
+                            Бухгалтера, от души:<br>
+                            — Можно, садись.
+                        </p>
+                        <button class="btn btn-outline-secondary" type="button">Смешно!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main > /Block 5 -->
+
+    </main>
+    <!-- /Main -->
+
+    <!-- Footer -->
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <p class="col-md-4 mb-0 text-body-secondary">© 2025 Даниил Дыбка</p>
+
+            <ul class="nav col-md-8 justify-content-end">
+                <li class="nav-item"><a href="#block1" class="nav-link px-2 text-body-secondary">Прекрасный сайт</a></li>
+                <li class="nav-item"><a href="#block2" class="nav-link px-2 text-body-secondary">Форма</a></li>
+                <li class="nav-item"><a href="#block3" class="nav-link px-2 text-body-secondary">На всю ширину</a></li>
+                <li class="nav-item"><a href="#block4" class="nav-link px-2 text-body-secondary">Иконки</a></li>
+                <li class="nav-item"><a href="#block5" class="nav-link px-2 text-body-secondary">Анекдоты!</a></li>
+            </ul>
+        </footer>
+    </div>
+    <!-- /Footer -->
+
+    <script src="cdn/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
